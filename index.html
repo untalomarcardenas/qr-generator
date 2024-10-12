@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador QR | HTML CSS JS API</title>
+    <link rel="shortcut icon" type="image/png" href="images/cyberpunk.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+      <div class="card">
+        <div class="card__top">
+            <div class="card__top-title">Generador de QR</div>
+          </div>
+          <div class="card__body">
+                    <input id="url" class="card__input" type="text" id="input" placeholder="Ingrese texto">
+                    <img src="" alt="" class="card__img">
+                    <button class="card__button">Generar QR</button>
+          </div>
+        </div>
+      
+	</main>
+  <footer class="footer">
+    <p class="footer__container">
+      <span class="footer__text">
+        Developed by:
+        <a
+          href="https://untalomarcardenas.github.io/"
+          class="footer__link"
+          target="_blank"
+          >Omar Cárdenas.</a
+        ></span
+      >
+      <span id="copyright" class="footer__text"></span>
+    </p>
+  </footer>
+    <script src="js/script.js"></script>
+    <script>
+        const copyright = document.querySelector("#copyright");
+        const date = new Date;
+        copyright.textContent = "Todos los derechos reservados ©"+date.getFullYear();
+      </script>
+</body>
+</html>
